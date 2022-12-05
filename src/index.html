@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nonsense application</title>
+  </head>
+  <body>
+    <div id="nonsense" />
+    <script>
+      window.process = {
+        env: {
+          NODE_ENV: "development",
+        },
+      };
+    </script>
+    <script src="/moduleserve/load.js" data-module="/index.bs.js"></script>
+  </body>
+</html>
